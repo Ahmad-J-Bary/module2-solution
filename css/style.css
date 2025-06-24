@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 15px;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 175%; /* 75% larger than dummy text */
+}
+
+/* Mobile First (100% width) */
+[class*="col-"] {
+  width: 100%;
+  float: left;
+  padding: 15px;
+}
+
+section {
+  position: relative;
+  background-color: #f0f0f0;
+  border: 1px solid black;
+  padding: 40px 15px 15px;
+}
+
+.section-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 30px;
+  border: 1px solid black;
+  font-size: 125%; /* 25% larger than dummy text */
+}
+
+.chicken { background-color: #d59898; }
+.beef { background-color: #c14543; color: white; }
+.sushi { background-color: #e5d198; }
+
+/* Tablet View (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 { width: 50%; }
+  .col-md-12 { width: 100%; }
+}
+
+/* Desktop View (≥992px) */
+@media (min-width: 992px) {
+  .col-lg-4 { width: 33.33%; }
+}
