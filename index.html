@@ -1,40 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Our Responsive Menu</title>
-  
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food, LLC - Our Menu</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1 class="menu-title">Our Menu</h1>
-  </header>
-  
-  <main class="container">
-    <div class="row">
-      <section class="col-lg-4 col-md-6 col-sm-12">
-        <div class="menu-item">
-          <h2 class="section-title" id="chicken-title">Chicken</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non.</p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-utensils me-2"></i>Food, LLC
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Dropdown Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto d-md-none">
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#chicken">Chicken</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#beef">Beef</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#sushi">Sushi</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </section>
-      
-      <section class="col-lg-4 col-md-6 col-sm-12">
-        <div class="menu-item">
-          <h2 class="section-title" id="beef-title">Beef</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non.</p>
+    </nav>
+    
+    <!-- Page Header -->
+    <header>
+        <h1 class="menu-title text-center">Our Menu</h1>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="container">
+        <div class="row g-4">
+            <!-- Chicken Section -->
+            <section class="col-lg-4 col-md-6 col-sm-12">
+                <div class="menu-item" id="chicken">
+                    <h2 class="section-title" id="chicken-title">Chicken</h2>
+                    <p>
+                        Enjoy our delicious chicken dish, prepared with fresh ingredients and aromatic herbs. Our chicken is tender and marinated with a blend of secret spices that give it a unique flavor. Served with fresh mixed vegetables and high-quality basmati rice.
+                    </p>
+                    <p>
+                        The chicken is slow-cooked to ensure it remains juicy and flavorful, making it a healthy and delicious meal. You can choose from different marinades including lemon and thyme, soy and ginger, or a spicy marinade for those who love strong flavors.
+                    </p>
+                    <p>
+                        All our chicken dishes are made from organic, hormone-free chicken, ensuring a healthy and nutritious meal. We also offer diet-friendly options like skinless grilled chicken.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Beef Section -->
+            <section class="col-lg-4 col-md-6 col-sm-12">
+                <div class="menu-item" id="beef">
+                    <h2 class="section-title" id="beef-title">Beef</h2>
+                    <p>
+                        Our beef dishes are a luxurious experience worth trying. We use only the finest imported beef cuts, served in different ways according to your preference. Whether you prefer grilled steak or slow-cooked stew, we have something to suit your taste.
+                    </p>
+                    <p>
+                        Our beef is prepared by professional chefs who master the art of cooking at perfect temperatures. Served with homemade sauces like mushroom sauce, pepper sauce, or red wine sauce, along with seasonal grilled vegetables and creamy mashed potatoes.
+                    </p>
+                    <p>
+                        We carefully select our meats from responsible sources, where cattle are raised on natural pastures and fed grass, giving the meat a rich flavor and excellent texture. All our dishes are made from antibiotic and hormone-free meats.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Sushi Section -->
+            <section class="col-lg-4 col-md-12 col-sm-12">
+                <div class="menu-item" id="sushi">
+                    <h2 class="section-title" id="sushi-title">Sushi</h2>
+                    <p>
+                        Enjoy an authentic sushi experience with the freshest ingredients. Our team of professional Japanese chefs offers a wide variety of sushi, sashimi, and rolls prepared daily with high-quality ingredients.
+                    </p>
+                    <p>
+                        Our menu includes classics like nigiri and sashimi, as well as exclusive creations like dragon roll and torched salmon roll. We use premium Japanese rice, organic seaweed, and fresh fish selected daily from the market.
+                    </p>
+                    <p>
+                        We also offer various vegetarian options using fresh ingredients like avocado, cucumber, and mushrooms. All our dishes are accompanied by organic soy sauce, fresh wasabi, and traditional Japanese pickles. Our sushi experience is not just a meal, but an unforgettable tasting journey.
+                    </p>
+                </div>
+            </section>
         </div>
-      </section>
-      
-      <section class="col-lg-4 col-md-12 col-sm-12">
-        <div class="menu-item">
-          <h2 class="section-title" id="sushi-title">Sushi</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non.</p>
+    </main>
+    
+    <!-- Page Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h4><i class="fas fa-utensils me-2"></i>Food, LLC</h4>
+                    <p>Our dishes are made with love and attention to detail</p>
+                    <p class="mb-0">All rights reserved &copy; 2023</p>
+                </div>
+            </div>
         </div>
-      </section>
-    </div>
-  </main>
+    </footer>
+    
+    <!-- Bootstrap 5 JS with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
